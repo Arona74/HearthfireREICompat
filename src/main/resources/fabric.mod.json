@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "hearthfirereicompat",
+  "version": "1.0.0",
+  "name": "Hearthfire REI Compatibility",
+  "description": "Adds REI support for Hearthfire mod's woodcutting and carpentry recipes",
+  "authors": [
+    "Arona74"
+  ],
+  "contact": {
+    "homepage": "https://github.com/arona74/HearthfireREICompat",
+    "sources": "https://github.com/arona74/HearthfireREICompat"
+  },
+  "license": "MIT",
+  "icon": "assets/hearthfirereicompat/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.arona74.hearthfirereicompat.HearthfireREICompatClientMod"
+    ],
+    "rei_client": [
+      "io.arona74.hearthfirereicompat.rei.HearthfireREIPlugin"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*",
+    "roughlyenoughitems": ">=12.0.0"
+  },
+  "suggests": {
+    "hearthfire": ">=1.0.0"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": [ "library" ],
+      "parent": {
+        "id": "hearthfire",
+        "name": "Hearthfire",
+        "description": "This mod adds REI compatibility for Hearthfire"
+      }
+    }
+  }
+}
